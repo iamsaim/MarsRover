@@ -1,0 +1,53 @@
+2022-10-31 16:31:59.100 +00:00 [INF] Now listening on: http://localhost:5179
+2022-10-31 16:31:59.136 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-31 16:31:59.138 +00:00 [INF] Hosting environment: Development
+2022-10-31 16:31:59.139 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-10-31 16:32:00.429 +00:00 [INF] HTTP GET /home responded 200 in 314.9592 ms
+2022-10-31 16:32:01.807 +00:00 [INF] HTTP GET /favicon.ico responded 404 in 1.2038 ms
+2022-10-31 16:44:48.951 +00:00 [INF] Now listening on: http://localhost:5179
+2022-10-31 16:44:48.999 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-31 16:44:49.000 +00:00 [INF] Hosting environment: Development
+2022-10-31 16:44:49.002 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-10-31 16:44:50.394 +00:00 [INF] HTTP GET /home responded 200 in 366.9045 ms
+2022-10-31 16:44:50.495 +00:00 [INF] HTTP GET /js/site.js responded 404 in 0.4156 ms
+2022-10-31 16:44:50.497 +00:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 404 in 0.1156 ms
+2022-10-31 16:44:50.519 +00:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 404 in 0.0421 ms
+2022-10-31 16:44:50.522 +00:00 [INF] HTTP GET /css/site.css responded 404 in 0.0357 ms
+2022-10-31 16:44:50.529 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 404 in 0.9948 ms
+2022-10-31 16:46:04.962 +00:00 [INF] HTTP GET /home responded 200 in 61.5272 ms
+2022-10-31 16:46:04.962 +00:00 [INF] HTTP GET /home responded 200 in 100.2909 ms
+2022-10-31 16:46:19.815 +00:00 [INF] Now listening on: http://localhost:5179
+2022-10-31 16:46:19.865 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-31 16:46:19.866 +00:00 [INF] Hosting environment: Development
+2022-10-31 16:46:19.867 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-10-31 16:46:21.063 +00:00 [INF] HTTP GET /home responded 200 in 315.1380 ms
+2022-10-31 16:46:21.158 +00:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 404 in 0.7500 ms
+2022-10-31 16:46:21.159 +00:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 404 in 0.1337 ms
+2022-10-31 16:46:21.160 +00:00 [INF] HTTP GET /js/site.js responded 404 in 0.0184 ms
+2022-10-31 16:46:21.169 +00:00 [INF] HTTP GET /css/site.css responded 404 in 0.0502 ms
+2022-10-31 16:46:21.179 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 404 in 0.9141 ms
+2022-10-31 16:46:23.960 +00:00 [INF] HTTP GET /home responded 200 in 19.0643 ms
+2022-10-31 16:46:24.008 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 404 in 0.0573 ms
+2022-10-31 16:46:24.008 +00:00 [INF] HTTP GET /css/site.css responded 404 in 0.0574 ms
+2022-10-31 16:46:24.008 +00:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 404 in 0.0308 ms
+2022-10-31 16:46:24.008 +00:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 404 in 0.0204 ms
+2022-10-31 16:46:24.009 +00:00 [INF] HTTP GET /js/site.js responded 404 in 0.0212 ms
+2022-10-31 16:46:24.517 +00:00 [INF] HTTP GET /favicon.ico responded 404 in 0.0394 ms
+2022-10-31 16:46:53.722 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 404 in 0.0381 ms
+2022-10-31 16:49:27.113 +00:00 [INF] Now listening on: http://localhost:5179
+2022-10-31 16:49:27.145 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-31 16:49:27.146 +00:00 [INF] Hosting environment: Development
+2022-10-31 16:49:27.148 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-10-31 16:49:28.026 +00:00 [WRN] Failed to determine the https port for redirect.
+2022-10-31 16:49:28.320 +00:00 [INF] HTTP GET /home responded 200 in 299.0542 ms
+2022-10-31 16:49:28.475 +00:00 [INF] HTTP GET /js/site.js responded 200 in 59.3931 ms
+2022-10-31 16:49:28.475 +00:00 [INF] HTTP GET /css/site.css responded 200 in 63.5628 ms
+2022-10-31 16:49:28.550 +00:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 137.4068 ms
+2022-10-31 16:49:28.550 +00:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 137.2626 ms
+2022-10-31 16:49:28.550 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 126.9071 ms
+2022-10-31 16:51:00.049 +00:00 [INF] Now listening on: http://localhost:5179
+2022-10-31 16:51:00.102 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-31 16:51:00.105 +00:00 [INF] Hosting environment: Development
+2022-10-31 16:51:00.107 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-10-31 16:51:01.248 +00:00 [WRN] Failed to determine the https port for redirect.
+2022-10-31 16:51:01.510 +00:00 [INF] HTTP GET /home responded 200 in 268.5511 ms

@@ -1,0 +1,57 @@
+2022-11-04 16:36:49.053 +00:00 [INF] Now listening on: http://localhost:5179
+2022-11-04 16:36:49.111 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-04 16:36:49.113 +00:00 [INF] Hosting environment: Development
+2022-11-04 16:36:49.115 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-11-04 16:36:50.371 +00:00 [WRN] Failed to determine the https port for redirect.
+2022-11-04 16:36:50.572 +00:00 [INF] Checking count of Plateau
+2022-11-04 16:36:51.694 +00:00 [INF] HTTP GET /home responded 302 in 1328.0315 ms
+2022-11-04 16:36:52.060 +00:00 [INF] HTTP GET /Home/InitiatePlateau?IfExists=False responded 200 in 327.0857 ms
+2022-11-04 16:36:52.387 +00:00 [INF] HTTP GET /css/site.css responded 200 in 144.9185 ms
+2022-11-04 16:36:52.387 +00:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 147.6334 ms
+2022-11-04 16:36:52.405 +00:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 165.9403 ms
+2022-11-04 16:36:52.414 +00:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 171.4029 ms
+2022-11-04 16:36:59.297 +00:00 [INF] Inserting Plateau
+2022-11-04 16:37:00.168 +00:00 [INF] HTTP POST /Home/InitiatePlateau responded 302 in 1118.1779 ms
+2022-11-04 16:37:00.200 +00:00 [INF] Checking count of Plateau
+2022-11-04 16:37:00.331 +00:00 [INF] Getting Plateau with plateauId: 0d46ae5f-b5e7-486b-8cf7-1ad2f1d8958a
+2022-11-04 16:37:00.527 +00:00 [INF] HTTP GET /?PlateauId=0d46ae5f-b5e7-486b-8cf7-1ad2f1d8958a responded 200 in 329.2357 ms
+2022-11-04 16:37:00.785 +00:00 [INF] HTTP GET /lib/img/cardinal-point-N.png responded 200 in 53.8072 ms
+2022-11-04 16:37:01.052 +00:00 [INF] HTTP GET /js/site.js responded 200 in 321.0777 ms
+2022-11-04 16:45:57.819 +00:00 [INF] Inserting rover
+2022-11-04 16:46:02.572 +00:00 [INF] Moving rover
+2022-11-04 16:48:04.439 +00:00 [INF] Now listening on: http://localhost:5179
+2022-11-04 16:48:04.483 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-04 16:48:04.485 +00:00 [INF] Hosting environment: Development
+2022-11-04 16:48:04.487 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-11-04 16:48:05.522 +00:00 [WRN] Failed to determine the https port for redirect.
+2022-11-04 16:48:05.683 +00:00 [INF] Checking count of Plateau
+2022-11-04 16:48:06.464 +00:00 [INF] HTTP GET /home responded 302 in 948.2367 ms
+2022-11-04 16:48:06.674 +00:00 [INF] HTTP GET /Home/InitiatePlateau?IfExists=False responded 200 in 181.3595 ms
+2022-11-04 16:48:12.842 +00:00 [INF] Inserting Plateau
+2022-11-04 16:48:13.013 +00:00 [INF] HTTP POST /Home/InitiatePlateau responded 302 in 247.1122 ms
+2022-11-04 16:48:13.022 +00:00 [INF] Checking count of Plateau
+2022-11-04 16:48:13.094 +00:00 [INF] Getting Plateau with plateauId: bd55f734-1f85-4c97-905c-baefe18a33e9
+2022-11-04 16:48:13.257 +00:00 [INF] HTTP GET /?PlateauId=bd55f734-1f85-4c97-905c-baefe18a33e9 responded 200 in 236.2273 ms
+2022-11-04 16:48:22.105 +00:00 [INF] Inserting rover
+2022-11-04 16:48:22.150 +00:00 [INF] Moving rover
+2022-11-04 16:48:22.169 +00:00 [INF] Inserting rover
+2022-11-04 16:48:22.172 +00:00 [INF] Moving rover
+2022-11-04 16:48:22.175 +00:00 [INF] HTTP POST /Home/UploadCSV responded 200 in 130.2514 ms
+2022-11-04 16:48:22.207 +00:00 [INF] Checking count of Plateau
+2022-11-04 16:48:22.209 +00:00 [INF] Getting Plateau with plateauId: bd55f734-1f85-4c97-905c-baefe18a33e9
+2022-11-04 16:48:22.217 +00:00 [INF] HTTP GET /Home/Index?PlateauId=bd55f734-1f85-4c97-905c-baefe18a33e9 responded 200 in 16.3965 ms
+2022-11-04 16:48:22.362 +00:00 [INF] HTTP GET /lib/img/rover%20E.png responded 304 in 27.6015 ms
+2022-11-04 16:48:22.362 +00:00 [INF] HTTP GET /lib/img/rover%20N.png responded 304 in 26.7586 ms
+2022-11-04 17:51:16.355 +00:00 [INF] Now listening on: http://localhost:5179
+2022-11-04 17:51:16.399 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-04 17:51:16.400 +00:00 [INF] Hosting environment: Development
+2022-11-04 17:51:16.401 +00:00 [INF] Content root path: C:\Project\MarsRover\MarsRover.WebApp
+2022-11-04 17:51:17.543 +00:00 [WRN] Failed to determine the https port for redirect.
+2022-11-04 17:51:17.750 +00:00 [INF] Checking count of Plateau
+2022-11-04 17:51:18.519 +00:00 [INF] HTTP GET /home responded 302 in 984.0843 ms
+2022-11-04 17:51:18.731 +00:00 [INF] HTTP GET /Home/InitiatePlateau?IfExists=False responded 200 in 184.3200 ms
+2022-11-04 17:51:23.795 +00:00 [INF] Inserting Plateau
+2022-11-04 17:51:23.924 +00:00 [INF] HTTP POST /Home/InitiatePlateau responded 302 in 185.4545 ms
+2022-11-04 17:51:23.933 +00:00 [INF] Checking count of Plateau
+2022-11-04 17:51:24.000 +00:00 [INF] Getting Plateau with plateauId: be6976fe-27d0-4b2d-80be-262025c5d747
+2022-11-04 17:51:24.104 +00:00 [INF] HTTP GET /?PlateauId=be6976fe-27d0-4b2d-80be-262025c5d747 responded 200 in 172.6369 ms

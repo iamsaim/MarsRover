@@ -1,0 +1,167 @@
+﻿@using Microsoft.AspNetCore.Mvc.ModelBinding
+@using MarsRover.Domain.Constants;
+@model MarsRover.Application.Common.ViewModel.GetPlateauVM
+@{
+	ViewData["Title"] = "Home Page";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="fl-table">
+	<tr>
+		<th colspan="2">Deploy a rover</th>
+		<th colspan="2"></th>
+	</tr>
+	<tr>
+		<td><Lable>Name:</Lable> </td>
+		<td>
+			<input name="Name" id="name" type="text" placeholder="Rover's Name" />
+		</td>
+	</tr>
+	<tr>
+		<td><Lable>X Coordinate:</Lable> </td>
+		<td>
+			<input name="x" id="x" type="text" placeholder="must be a postive value" />
+		</td>
+	</tr>
+	<tr>
+		<td><Lable>Y Coordinate:</Lable> </td>
+		<td>
+			<input name="y" id="y" type="text" placeholder="must be a postive value" />
+		</td>
+	</tr>
+	<tr>
+		<td><Lable>Cardinal Point:</Lable> </td>
+		<td>
+			<select name="CardinalPoint" id="CardinalPoint">
+				<option value="N">North</option>
+				<option value="S">South</option>
+				<option value="E">East</option>
+				<option value="W">West</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" onclick="DeployRover();" value="Submit" /></td>
+	</tr>
+</table>
+<div class="center"><input type="button" onclick="OpenPopupCSV();" value="Configure with CSV" /></div>
+
+<div>
+	<br />
+	<br />
+	<br />
+	<div class="North"><img src="/lib/img/cardinal-point-N.png" alt="North" width="50" height="50"></div>
+	<div>
+		<table class="fl-table">
+			@for (int i = @Model.Height; i >= 1; i--)
+			{
+				<tr>
+					@for (int j = 1; j <= @Model.Width; j++)
+					{
+
+						<td>
+							<div class="grid-item">
+								@{
+									var rovers = Model.rovers.Where(x => x.x == j && x.y == i);
+									foreach (var rover in rovers)
+									{
+										if (rover.CardinalPoint == CardinalPoint.N)
+										{
+											<div class="click-to-top" onclick="MoveRover('@rover.Id');">
+												<img src="/lib/img/rover N.png" width="30" height="30">
+												<span style="font-size: 13px">@rover.Name, facing @CardinalPoint.N</span>
+											</div>
+
+										}
+										else if (rover.CardinalPoint == CardinalPoint.S)
+										{
+											<div class="click-to-top" onclick="MoveRover('@rover.Id');">
+												<img src="/lib/img/rover S.png" width="30" height="30">
+												<span style="font-size: 13px">@rover.Name, facing @CardinalPoint.S</span>
+											</div>
+										}
+										else if (rover.CardinalPoint == CardinalPoint.W)
+										{
+											<div class="click-to-top" onclick="MoveRover('@rover.Id');">
+												<img src="/lib/img/rover W.png" width="30" height="30">
+												<span style="font-size: 13px">@rover.Name, facing @CardinalPoint.W</span>
+											</div>
+										}
+										else if (rover.CardinalPoint == CardinalPoint.E)
+										{
+											<div class="click-to-top" onclick="MoveRover('@rover.Id');">
+												<img src="/lib/img/rover E.png" width="30" height="30">
+												<span style="font-size: 13px">@rover.Name, facing @CardinalPoint.E</span>
+											</div>
+										}
+
+									}
+
+								}
+
+							</div>
+						</td>
+
+					}
+
+				</tr>
+			}
+		</table>
+	</div>
+</div>
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close" onclick="closePopup()">&times;</span>
+		<table class="fl-table">
+			<tr>
+				<th colspan="2">Move Rover</th>
+				<th colspan="2"></th>
+			</tr>
+			<tr>
+				<td><Lable>Moves:</Lable> </td>
+				<td>
+					<input name="Name" id="moves" type="text" placeholder="Rover move directions" />
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" onclick="SendMoveRover();" value="Move" /></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div id="uploadcsvmodel" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closePopupCSV()">&times;</span>
+			<table class="fl-table">
+				<tr>
+					<th colspan="2">Upload CSV</th>
+					<th colspan="2"></th>
+				</tr>
+				<tr>
+					<td><Lable>Upload CSV:</Lable> </td>
+					<td>
+						<input id="fileupload" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" type="file" name="fileupload" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" onclick="uploadcsv();" value="Upload" /></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+<input type="hidden" value="@Model.Id" id="plateauId" />
+<input type="hidden" value="@Model.Width" id="width" />
+<input type="hidden" value="@Model.Height" id="Height" />
+<input type="hidden" value="" id="roverId" />
+
+@section Scripts
+{
+<script src="~/js/site.js" asp-append-version="true"></script>
+}
+
+

@@ -1,0 +1,44 @@
+﻿@model MarsRover.Application.Common.ViewModel.InitiatePlateauVM
+@{
+	ViewData["Title"] = "Initiate Plateau";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+	@using (Html.BeginForm("InitiatePlateau", "Home", FormMethod.Post))
+	{
+		<table class="fl-table">
+			<tr>
+				<th colspan="2">Initiate Plateau</th>
+				<th colspan="2"></th>
+
+			</tr>
+			<tr>
+				<td><Lable>Width:</Lable> </td>
+				<td>
+					@Html.TextBoxFor(m => m.Width)
+					<br />
+					@Html.ValidationMessageFor(m => m.Width,"", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td><Lable>Height:</Lable> </td>
+				<td>
+					@Html.TextBoxFor(m => m.Height)
+					<br />
+					@Html.ValidationMessageFor(m => m.Height,"", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+		</table>
+	}
+
+</body>
+</html>
+
